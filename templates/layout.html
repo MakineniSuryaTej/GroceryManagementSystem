@@ -10,6 +10,14 @@
             function hideURLbar(){ window.scrollTo(0,1); 
             } 
         </script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"crossorigin="anonymous">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
         <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="../static/css/style.css" rel="stylesheet" type="text/css" media="all" />
         <link href="../static/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
@@ -104,74 +112,137 @@
         {% block body %}
         {% endblock %}
 
- <div class="footer">
-    <div class="container">
-        <div class="col-md-3 w3_footer_grid">
-            <h3>information</h3>
-            <ul class="w3_footer_grid_list">
-                <li><a href="{{url_for('events')}}">Events</a></li>
-                <li><a href="{{url_for('about')}}">About Us</a></li>
-                <li><a href="{{url_for('products')}}">Best Deals</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="short-codes.html">Short Codes</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3 w3_footer_grid">
-            <h3>policy info</h3>
-            <ul class="w3_footer_grid_list">
-                <li><a href="faqs.html">FAQ</a></li>
-                <li><a href="privacy.html">privacy policy</a></li>
-                <li><a href="privacy.html">terms of use</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3 w3_footer_grid">
-            <h3>what in stores</h3>
-            <ul class="w3_footer_grid_list">
-                <li><a href="pet.html">Pet Food</a></li>
-                <li><a href="frozen.html">Frozen Snacks</a></li>
-                <li><a href="kitchen.html">Kitchen</a></li>
-                <li><a href="products.html">Branded Foods</a></li>
-                <li><a href="household.html">Households</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3 w3_footer_grid">
-            <h3>twitter posts</h3>
-            <ul class="w3_footer_grid_list1">
-                <li><label class="fa fa-twitter" aria-hidden="true"></label><i>01 day ago</i><span>Non numquam <a href="#">http://sd.ds/13jklf#</a>
-                    eius modi tempora incidunt ut labore et
-                    <a href="#">http://sd.ds/1389kjklf#</a>quo nulla.</span></li>
-                <li><label class="fa fa-twitter" aria-hidden="true"></label><i>02 day ago</i><span>Con numquam <a href="#">http://fd.uf/56hfg#</a>
-                    eius modi tempora incidunt ut labore et
-                    <a href="#">http://fd.uf/56hfg#</a>quo nulla.</span></li>
-            </ul>
-        </div>
-        <div class="clearfix"> </div>
-        <div class="agile_footer_grids">
-            <div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
-                <div class="w3_footer_grid_bottom">
-                    <h4>100% secure payments</h4>
-                    <img src="../static/images/card.png" alt=" " class="img-responsive" />
-                </div>
-            </div>
-            <div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
-                <div class="w3_footer_grid_bottom">
-                    <h5>connect with us</h5>
-                    <ul class="grocery_social_icons">
-                        <li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-        <div class="wthree_footer_copy">
-            <p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://groceryayouts.com/">groceryayouts</a></p>
-        </div>
+<!-- Footer -->
+<footer class="page-footer font-small elegant-color" style="background-color:black;color:white">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left pt-4 pt-md-5">
+
+    <!-- Grid row -->
+    <div class="row mt-1 mt-md-0 mb-4 mb-md-0">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+
+        <!-- Links -->
+        <h2>About Us</h2>
+        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+
+        <p class="foot-desc mb-0">Grocery store is Local’s largest online food and grocery store.
+         you will find everything you are looking for.Right from fresh Fruits and Vegetables, Rice and Dals, 
+         Spices and Seasonings to Packaged products,Beverages – we have it all</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+
+        <!-- Links -->
+        <h2>Products</h2>
+        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+
+        <ul class="list-unstyled foot-desc">
+          <li class="mb-2">
+            <a href="#!">Vegetables</a>
+          </li>
+          <li class="mb-2">
+            <a href="#!">Fruits</a>
+          </li>
+          <li class="mb-2">
+            <a href="#!">Bread and Bakery</a>
+          </li>
+          <li class="mb-2">
+            <a href="#!">Beverages</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+
+        <!-- Links -->
+        <h2>Useful links</h2>
+        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+
+        <ul class="list-unstyled foot-desc">
+          <li class="mb-2">
+            <a href="#!">Profile</a>
+          </li>
+          <li class="mb-2">
+            <a href="#!">New products</a>
+          </li>
+          <li class="mb-2">
+            <a href="#!">FAQ</a>
+          </li>
+          <li class="mb-2">
+            <a href="#!">privacy and policy</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+
+        <!-- Links -->
+        <h2>Contact</h2>
+        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+
+        <ul class="fa-ul foot-desc ml-4">
+          <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>042 567 517 511</li>
+          <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>Grocerystore@support.com</li>
+          <li><span class="fa-li"><i class="far fa-clock"></i></span>Monday - Sunday: 10 A.M - 10 P.M</li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
     </div>
-</div> 
+    <!-- Grid row -->
+
+  </div>
+
+
+  <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <p>Follow on social media</p>
+      <a href="https://www.youtube.com/" class="btn btn-primary m-1" role="button"
+        rel="nofollow" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.facebook.com" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="https://mdbootstrap.com/">Grocery Store</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
 <!-- //footer -->
         <script src="../static/js/bootstrap.min.js"></script>
         <script>
