@@ -34,5 +34,13 @@ def ouraid():
 def products():
     return render_template('products.html')
 
+@app.route('/single')
+def single():
+    return render_template('single.html')
+
+@app.route('/vegetables')
+def vegetables():
+    return render_template('vegetables.html')
+
 if __name__=='__main__':
     app.run(debug=True)
