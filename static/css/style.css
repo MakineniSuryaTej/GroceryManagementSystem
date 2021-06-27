@@ -267,7 +267,6 @@ ul.dropdown-menu.drp-mnu li a i {
 .navbar-nav {
     float: none;
     margin: 0;
-	border-top: 1px solid #B58F62;
 }
 .navbar-nav > li > a {
     color: #212121;
@@ -2324,6 +2323,69 @@ ul.wmuSliderPagination {
     font-size: 1em;
 }
 /*-- //login --*/
+.layout-social{ 
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+.facebookBtn{
+    background: #4060A5;
+}
+.facebookBtn:before{
+    font-family: "FontAwesome";
+    content: "\f09a";
+}
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+.twitterBtn{
+    background: #00ABE3;
+}
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099";
+}
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+}
+.instagramBtn{
+    background: #ec4a89;
+}
+
+.instagramBtn:before{
+      font-family: "FontAwesome";
+      content: "\f16d"; 
+}
+.instagramBtn:hover{
+      color: #e64522;
+      background: #fff;
+}
+.youtubeBtn{
+    background: #cb2027;
+}
+.youtubeBtn:before{
+      font-family: "FontAwesome";
+      content: "\f167"; 
+}
+.youtubeBtn:hover{
+      color: #cb2027;
+      background: #fff;
+}
 /*-----start-responsive-design------*/
 @media (max-width:1440px){
 	.grocery_header_right {
@@ -3085,7 +3147,6 @@ ul.wmuSliderPagination {
 		margin-left: 1em;
 		float: none;
 		width: 100%;
-		margin: 6em 0 1em;
 		text-align: center;
 	}
 	.grocerys_logo_products_left {
@@ -4270,8 +4331,3 @@ ul.wmuSliderPagination {
 		font-size: 13px;
 	}
 }
-
-
-
-/* footer */
-
