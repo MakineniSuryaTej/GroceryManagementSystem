@@ -71,14 +71,14 @@ i.badge.badge-notify.my-cart-badge {
     color: #fff;
 	top: 1em;
 }
-input[type="submit"],#PPMiniCart .minicart-submit,.grocerys_vegetables ul li a,input[type="reset"],.agileinfo_mail_grid_left ul li a,.events_bottom_left2 ul li a,.grocerys_service_grids1_right a,ul.agileits_social_icons li a,.grocery_banner_nav_right_banner_pet a,.grocerys_grocery_banner_nav_right_grid_head_grid ul li a,.products-breadcrumb ul li a,.w3_footer_grid ul li a,.grocery_fresh_vegetables_grid ul li a,.wthree_footer_copy p a,.agile_top_brand_left_grid1 .button,.grocerys_logo_products_left1 ul.special_items li a,.grocerys_logo_products_left1 ul.phone_email li a{
+input[type="submit"],#PPMiniCart .minicart-submit,.grocerys_vegetables ul li a,input[type="reset"],.agileinfo_mail_grid_left ul li a,.events_bottom_left2 ul li a,.grocerys_service_grids1_right a,ul.grocery_social_icons li a,.grocery_banner_nav_right_banner_pet a,.grocerys_grocery_banner_nav_right_grid_head_grid ul li a,.products-breadcrumb ul li a,.w3_footer_grid ul li a,.grocery_fresh_vegetables_grid ul li a,.wthree_footer_copy p a,.agile_top_brand_left_grid1 .button,.grocerys_logo_products_left1 ul.special_items li a,.grocerys_logo_products_left1 ul.phone_email li a{
 	transition: .5s ease-in;
 	-webkit-transition: .5s ease-in;
 	-moz-transition: .5s ease-in;
 	-o-transition: .5s ease-in;
 	-ms-transition: .5s ease-in;
 }
-.agileits_header{
+.grocery_header{
 	background:#212121;
 }
 .grocery_offers{
@@ -89,7 +89,7 @@ input[type="submit"],#PPMiniCart .minicart-submit,.grocerys_vegetables ul li a,i
     color: #fff;
     text-decoration: none;
     padding: .5em 3em;
-    background: #84C639;
+    background: #f6c453;
 	display:block;
 }
 .grocery_search{
@@ -158,7 +158,7 @@ ul.dropdown-menu.drp-mnu li a i {
 }
 .grocerys_logo_products_left{
 	float:left;
-	margin-right: 7em;
+	margin-right: 4em;
 }
 .grocerys_logo_products_left h1 a{
 	font-size: 1.5em;
@@ -166,7 +166,9 @@ ul.dropdown-menu.drp-mnu li a i {
     text-decoration: none;
     text-transform: uppercase;
     display: block;
-    background: url(../images/img-sp.png) no-repeat 54px 6px;
+    background: url(../images/logo3.png) no-repeat 54px 6px;
+	background-size: 35px;
+	background-position: bottom;
     line-height: 1;
     height: 97px;
 }
@@ -214,7 +216,7 @@ ul.dropdown-menu.drp-mnu li a i {
 	padding:0 2em;
 }
 .grocerys_logo_products_left1:nth-child(3) {
-    margin-left: 6em;
+    margin-left: 7em;
 }
 .sub{
     float:left;
@@ -239,9 +241,9 @@ ul.dropdown-menu.drp-mnu li a i {
 }
 .grocery_banner_nav_left{
 	float: left;
-/*-- agileits --*/
+/*-- grocery --*/
     width: 20%;
-    background: #f5f5f5;
+    background: #e1eedd;
 }
 .wthree_banner_bottom_left_grid_sub{
 	float: left;
@@ -339,7 +341,7 @@ ul.dropdown-menu.drp-mnu li a i {
 	line-height:2em;
 }
 .grocery_banner_nav_right_banner2 h3 i{
-/*-- agileits --*/
+/*-- grocery --*/
 	display:block;
 	font-weight:600;
 	line-height:2em;
@@ -865,10 +867,10 @@ ul.dropdown-menu.drp-mnu li a i {
 .w3_footer_grid_bottom h5{
 	color:#fff;
 }
-.agileits_social_icons li{
+.grocery_social_icons li{
 	display:inline-block;
 }
-.agileits_social_icons li a{
+.grocery_social_icons li a{
 	border: 2px solid #fff;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -881,26 +883,26 @@ ul.dropdown-menu.drp-mnu li a i {
     display: block;
     text-align: center;
 }
-.agileits_social_icons li a i {
+.grocery_social_icons li a i {
     padding: 0.8em 0 0;
 }
-.agileits_social_icons li a.facebook:hover{
+.grocery_social_icons li a.facebook:hover{
 	background:#3b5998;
 	border-color:#3b5998;
 }
-.agileits_social_icons li a.twitter:hover{
+.grocery_social_icons li a.twitter:hover{
 	background:#55acee;
 	border-color:#55acee;
 }
-.agileits_social_icons li a.google:hover{
+.grocery_social_icons li a.google:hover{
 	background:#dd4b39;
 	border-color:#dd4b39;
 }
-.agileits_social_icons li a.instagram:hover{
+.grocery_social_icons li a.instagram:hover{
 	background:#833ab4;
 	border-color:#833ab4;
 }
-.agileits_social_icons li a.dribbble:hover{
+.grocery_social_icons li a.dribbble:hover{
 	background:#ea4c89;
 	border-color:#ea4c89;
 }
@@ -1830,31 +1832,31 @@ p.animi{
 .team{
 	background:#f5f5f5;
 }
-.agileits_team_grids{
+.grocery_team_grids{
 	margin:3em 0 0;
 }
-.agileits_team_grid h4{
+.grocery_team_grid h4{
 	margin: 1em 0 .2em;
     color: #84C639;
     font-size: 1.2em;
     text-transform: uppercase;
 }
-.agileits_team_grid p{
+.grocery_team_grid p{
 	color:#999;
 	font-size:14px;
 	margin-bottom:1em;
 }
-.agileits_team_grid {
+.grocery_team_grid {
     text-align: center;
 }
-.agileits_team_grid img{
+.grocery_team_grid img{
     margin:0 auto;
 }
-.agileits_social_icons_team li a {
+.grocery_social_icons_team li a {
     border: 2px solid #212121;
     color: #212121;
 }
-.agileits_social_icons_team li a:hover{
+.grocery_social_icons_team li a:hover{
     color: #fff;
 }
 .w3_testimonials_grid p{
@@ -2323,7 +2325,6 @@ ul.wmuSliderPagination {
 }
 /*-- //login --*/
 /*-----start-responsive-design------*/
-
 @media (max-width:1440px){
 	.grocery_header_right {
 		padding-left: 4em;
@@ -2487,7 +2488,9 @@ ul.wmuSliderPagination {
 	}
 	.grocerys_logo_products_left h1 a {
 		font-size: 1.3em;
-		background: url(../images/img-sp.png) no-repeat 43px -3px;
+		background: url(../images/logo3.png)  no-repeat ;
+		background-size: 35px;
+		background-position: bottom;
 		height: 88px;
 	}
 	.grocerys_logo_products_left1 ul.phone_email li:last-child {
@@ -2675,7 +2678,9 @@ ul.wmuSliderPagination {
 	}
 	.grocerys_logo_products_left h1 a {
 		font-size: 1.2em;
-		background: url(../images/img-sp.png) no-repeat 38px -9px;
+		background: url(../images/logo3.png) no-repeat 38px -9px;
+		background-size: 35px;
+		background-position: bottom;
 		height: 83px;
 	}
 	.grocerys_logo_products_left1 ul.phone_email li {
@@ -2866,11 +2871,11 @@ ul.wmuSliderPagination {
 	.agile_about_grid_left {
 		margin: 2em 0 0;
 	}
-	.agileits_team_grid {
+	.grocery_team_grid {
 		float: left;
 		width: 50%;
 	}
-	.agileits_team_grid:nth-child(2) {
+	.grocery_team_grid:nth-child(2) {
 		margin-bottom: 2em;
 	}
 	.w3_testimonials_grid {
@@ -2978,7 +2983,9 @@ ul.wmuSliderPagination {
 	}
 	.grocerys_logo_products_left h1 a {
 		font-size: 1em;
-		background: url(../images/img-sp.png) no-repeat 28px -17px;
+		background: url(../images/logo3.png) no-repeat 28px -17px;
+		background-size: 35px;
+		background-position: bottom;
 		height: 74px;
 	}
 	.grocerys_logo_products_left1 {
@@ -3083,13 +3090,16 @@ ul.wmuSliderPagination {
 	}
 	.grocerys_logo_products_left {
 		margin-right: 0;
+		margin-left: 8em;
 	}
 	.grocerys_logo_products_left1 {
 		float: right;
 	}
 	.grocerys_logo_products_left h1 a {
 		font-size: 1.2em;
-		background: url(../images/img-sp.png) no-repeat 38px -8px;
+		background: url(../images/logo3.png) no-repeat 38px -8px;
+		background-size: 35px;
+		background-position: bottom;
 		height: 85px;
 	}
 	ul.dropdown-menu.drp-mnu {
@@ -3151,7 +3161,7 @@ ul.wmuSliderPagination {
 	.grocery_banner_nav_left {
 		float: none;
 		width: 100%;
-		background: #f5f5f5;
+		background: #e1eedd;
 		text-align: center;
 	}
 	.navbar-toggle {
@@ -3189,7 +3199,7 @@ ul.wmuSliderPagination {
 @media (max-width: 736px){
 	.grocery_search {
 		width: 50%;
-		margin: .1em 0 1em 10em;
+		margin: .1em 0 1em 6em;
 	}
 	.grocery_header_right {
 		padding-left: 6.5em;
@@ -3226,7 +3236,7 @@ ul.wmuSliderPagination {
 @media (max-width: 667px){
 	.grocery_search {
 		width: 55%;
-		margin: .1em 0 1em 5.8em;
+		margin: .1em 0 1em 3.8em;
 	}
 	.container {
 		width: auto;
@@ -3256,7 +3266,7 @@ ul.wmuSliderPagination {
 		position: relative;
 	}
 	.grocery_search {
-		margin: .1em 0 1em 5em;
+		margin: .1em 0 1em 3em;
 	}
 	.grocery_header_right {
 		padding-left: 4.5em;
@@ -3373,7 +3383,7 @@ ul.wmuSliderPagination {
 }
 @media (max-width: 568px){
 	.grocery_search {
-		margin: .1em 0 1em 2.9em;
+		margin: .1em 0 1em .9em;
 	}
 	.more {
 		margin-left: 24.5em;
@@ -3402,7 +3412,7 @@ ul.wmuSliderPagination {
 		max-height: 350px !important;
 	}
 	.grocery_search {
-		margin: .1em 0 0.5em 1.7em;
+		margin: .1em 0 0.5em .7em;
 		width: 51%;
 	}
 	.grocery_search input[type="text"] {
@@ -3438,7 +3448,9 @@ ul.wmuSliderPagination {
 	}
 	.grocerys_logo_products_left h1 a {
 		font-size: 1em;
-		background: url(../images/img-sp.png) no-repeat 28px -18px;
+		background: url(../images/logo3.png) no-repeat 28px -18px;
+		background-size: 35px;
+		background-position: bottom;
 		height: 75px;
 	}
 	.grocerys_logo_products_left1 ul.special_items li i {
@@ -3686,7 +3698,7 @@ ul.wmuSliderPagination {
 		padding: .62em .5em;
 	}
 	.grocery_search {
-		margin: .1em 0 0.5em 0.7em;
+		margin: .1em 0 0.5em 0.0em;
 	}
 	.grocery_search input[type="submit"] {
 		width: 18%;
@@ -3780,14 +3792,14 @@ ul.wmuSliderPagination {
 	.privacy2-grid1 h5 {
 		font-size: 1em;
 	}
-	.agileits_team_grid {
+	.grocery_team_grid {
 		float: none;
 		width: 100%;
 	}
-	.agileits_team_grid:nth-child(2) {
+	.grocery_team_grid:nth-child(2) {
 		margin: 2em 0;
 	}
-	.agileits_team_grid:nth-child(3) {
+	.grocery_team_grid:nth-child(3) {
 		margin-bottom: 2em;
 	}
 	.w3agile_event_grid {
@@ -3975,7 +3987,7 @@ ul.wmuSliderPagination {
 	}
 }
 @media (max-width: 320px){
-	.agileits_social_icons li a i {
+	.grocery_social_icons li a i {
 		padding: .9em 0 0;
 	}
 	ul li, ol li {
@@ -4018,7 +4030,7 @@ ul.wmuSliderPagination {
 	.top_brand_left, .grocerys_grocery_banner_left {
 		width: 100%;
 	}
-	.agile_top_brand_left_grid1 p,.agileinfo_mail_grid_right input[type="text"], .agileinfo_mail_grid_right input[type="email"], .agileinfo_mail_grid_right textarea,.w3agile_event_grid_right p,.agileits_team_grid p,p.animi,.w3_testimonials_grid p,.wthree_news_top_serv_btm_grid p,.privacy1-grid ul li span,.grocerys_service_grid_left p, .privacy2-grid1 p,.grocery_fresh_vegetables_grid ul li a,.wthree_footer_copy p,.grocery_banner_nav_right_banner_pet p {
+	.agile_top_brand_left_grid1 p,.agileinfo_mail_grid_right input[type="text"], .agileinfo_mail_grid_right input[type="email"], .agileinfo_mail_grid_right textarea,.w3agile_event_grid_right p,.grocery_team_grid p,p.animi,.w3_testimonials_grid p,.wthree_news_top_serv_btm_grid p,.privacy1-grid ul li span,.grocerys_service_grid_left p, .privacy2-grid1 p,.grocery_fresh_vegetables_grid ul li a,.wthree_footer_copy p,.grocery_banner_nav_right_banner_pet p {
 		font-size: 13px;
 	}
 	.privacy1-grid ul li span {
@@ -4128,10 +4140,10 @@ ul.wmuSliderPagination {
 	.top-brands h3, .fresh-vegetables h3, .mail h3, .testimonials h3, .w3_login h3, .grocerys_grocery_banner_nav_right_grid h3, h3.title, .faq h3, .services h3, .about h3, .team h3, .events h3 {
 		font-size: 1.49em;
 	}
-	.agileits_team_grids {
+	.grocery_team_grids {
 		margin: 2em 0 0;
 	}
-	.agileits_team_grid h4 {
+	.grocery_team_grid h4 {
 		font-size: 1em;
 	}
 	.agile_about_grids {

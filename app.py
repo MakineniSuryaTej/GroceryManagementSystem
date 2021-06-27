@@ -22,6 +22,14 @@ def drinks():
 def events():
     return render_template('events.html')
 
+@app.route('/login')
+def login():
+    return render_template('grocery-login.html')
+
+@app.route('/ouraid')
+def ouraid():
+    return render_template('ouraid.html')
+
 @app.route('/products')
 def products():
     return render_template('products.html')
