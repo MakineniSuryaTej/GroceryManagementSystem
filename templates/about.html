@@ -1,21 +1,18 @@
 {% extends 'layout.html' %}
-
 {% block body %}
-<!-- products-breadcrumb -->
+
 <div class="products-breadcrumb">
-		<div class="container">
-			<ul>
-				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>About Us</li>
-			</ul>
-		</div>
+	<div class="container">
+		<ul>
+			<li><i class="fa fa-home" aria-hidden="true"></i><a href="{{url_for('home')}}">Home</a><span>|</span></li>
+			<li>About Us</li>
+		</ul>
+	</div>
 </div>
-<!-- //products-breadcrumb -->
-<!-- banner -->
+
 <div class="banner">
 	{% include "contents.html" %}
 	<div class="grocery_banner_nav_right">
-	<!-- about -->
 		<div class="privacy about">
 			<h3>About Us</h3>
 			<p class="animi">Grocery store is Local’s largest online food and grocery store. With different products brands in our catalogue you will find everything you are looking for.
@@ -23,7 +20,7 @@
              Choose from a wide range of options in every category, exclusively handpicked to help you find the best quality available at the lowest prices.
 			 Select a products and your order will be delivered right to your doorstep, anywhere in Vijayawada.You can pay online using your debit / credit card or by cash / cash on delivary on delivery.
              We guarantee on time delivery, and the best quality!
-</p>
+			</p>
 			<div class="agile_about_grids">
 				<div class="col-md-6 agile_about_grid_right">
 					<img src="../static/images/31.jpg" alt=" " class="img-responsive" />
@@ -43,49 +40,47 @@
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-<!-- //about -->
 	</div>
 	<div class="clearfix"></div>
 </div>
-<!-- //banner -->
-<!-- team -->
+
 <div class="team">
-		<div class="container">
-			<h3>Our Team</h3>
-			<div class="grocery_team_grids">
-				<div class="col-md-4 grocery_team_grid">
-					<img src="../static/images/32.jpg" alt=" " class="img-responsive" />
-					<h4>Suryatej Makineni</h4>
-					<p>CEO</p>
-					<ul class="grocery_social_icons grocery_social_icons_team">
-						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 grocery_team_grid">
-					<img src="../static/images/33.jpg" alt=" " class="img-responsive" />
-					<h4>VeerendraSaradhi Tungala</h4>
-					<p>Manager</p>
-					<ul class="grocery_social_icons grocery_social_icons_team">
-						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 grocery_team_grid">
-					<img src="../static/images/34.jpg" alt=" " class="img-responsive" />
-					<h4>Venkatesh T</h4>
-					<p>Supervisor</p>
-					<ul class="grocery_social_icons grocery_social_icons_team">
-						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
+	<div class="container">
+		<h3>Our Team</h3>
+		<div class="grocery_team_grids">
+			<div class="col-md-4 grocery_team_grid">
+				<img src="../static/images/32.jpg" alt=" " class="img-responsive" />
+				<h4>Suryatej Makineni</h4>
+				<p>CEO</p>
+				<ul class="grocery_social_icons grocery_social_icons_team">
+					<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+				</ul>
 			</div>
+			<div class="col-md-4 grocery_team_grid">
+				<img src="../static/images/33.jpg" alt=" " class="img-responsive" />
+				<h4>VeerendraSaradhi Tungala</h4>
+				<p>Manager</p>
+				<ul class="grocery_social_icons grocery_social_icons_team">
+					<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 grocery_team_grid">
+				<img src="../static/images/34.jpg" alt=" " class="img-responsive" />
+				<h4>Venkatesh T</h4>
+				<p>Supervisor</p>
+				<ul class="grocery_social_icons grocery_social_icons_team">
+					<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
 		</div>
+	</div>
 </div>
-<!-- //team -->
+
 {% endblock %}

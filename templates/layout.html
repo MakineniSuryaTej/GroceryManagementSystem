@@ -112,140 +112,73 @@
         {% block body %}
         {% endblock %}
 
-<!-- Footer -->
-<footer class="page-footer font-small elegant-color" style="background-color:black;color:white">
+        <footer class="page-footer font-small elegant-color" style="background-color:black;color:white">
+            <div class="container text-center text-md-left pt-4 pt-md-5">
+                <div class="row mt-1 mt-md-0 mb-4 mb-md-0">
+                    <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+                        <h2>About Us</h2>
+                        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+                        <p class="foot-desc mb-0">Grocery store is Local’s largest online food and grocery store.
+                        you will find everything you are looking for.Right from fresh Fruits and Vegetables, Rice and Dals, 
+                        Spices and Seasonings to Packaged products,Beverages – we have it all</p>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+                        <h2>Products</h2>
+                        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+                        <ul class="list-unstyled foot-desc">
+                            <li class="mb-2"><a href="{{url_for('vegetables')}}">Vegetables</a></li>
+                            <li class="mb-2"><a href="{{url_for('vegetables')}}">Fruits</a></li>
+                            <li class="mb-2"><a href="{{url_for('bread')}}">Bread and Bakery</a></li>
+                            <li class="mb-2"><a href="{{url_for('drinks')}}">Beverages</a></li>
+                        </ul>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+                        <h2>Useful links</h2>
+                        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+                        <ul class="list-unstyled foot-desc">
+                            <li class="mb-2"><a href="#!">Profile</a></li>
+                            <li class="mb-2"><a href="#!">New products</a></li>
+                            <li class="mb-2"><a href="#!">FAQ</a></li>
+                            <li class="mb-2"><a href="#!">privacy and policy</a></li>
+                        </ul>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+                        <h2>Contact</h2>
+                        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+                        <ul class="fa-ul foot-desc ml-4">
+                            <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>042 567 517 511</li>
+                            <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>Grocerystore@support.com</li>
+                            <li><span class="fa-li"><i class="far fa-clock"></i></span>Monday - Sunday: 10 A.M - 10 P.M</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="mx-auto" />
+            <div class="container">
+                <hr class="layout-footline" style="opacity: 0;">
+                <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item">
+                        <a class="facebookBtn layout-social" href="https://www.facebook.com/sevabharathitg" target="_blank" style="text-decoration: none;"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="twitterBtn layout-social" href="https://twitter.com/sevabharathitg" target="_blank" style="text-decoration: none;"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="instagramBtn layout-social" href="https://www.instagram.com/sevabharathitg/" target="_blank" style="text-decoration: none;"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="youtubeBtn layout-social" href="https://www.youtube.com/user/sevabharathi"  target="_blank" style="text-decoration: none;"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-copyright text-center py-3">© 2021 Copyright:
+                <a href="https://mdbootstrap.com/">Grocery Store</a>
+            </div>
+        </footer>
 
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left pt-4 pt-md-5">
-
-    <!-- Grid row -->
-    <div class="row mt-1 mt-md-0 mb-4 mb-md-0">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
-
-        <!-- Links -->
-        <h2>About Us</h2>
-        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
-
-        <p class="foot-desc mb-0">Grocery store is Local’s largest online food and grocery store.
-         you will find everything you are looking for.Right from fresh Fruits and Vegetables, Rice and Dals, 
-         Spices and Seasonings to Packaged products,Beverages – we have it all</p>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
-
-        <!-- Links -->
-        <h2>Products</h2>
-        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
-
-        <ul class="list-unstyled foot-desc">
-          <li class="mb-2">
-            <a href="#!">Vegetables</a>
-          </li>
-          <li class="mb-2">
-            <a href="#!">Fruits</a>
-          </li>
-          <li class="mb-2">
-            <a href="#!">Bread and Bakery</a>
-          </li>
-          <li class="mb-2">
-            <a href="#!">Beverages</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
-
-        <!-- Links -->
-        <h2>Useful links</h2>
-        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
-
-        <ul class="list-unstyled foot-desc">
-          <li class="mb-2">
-            <a href="#!">Profile</a>
-          </li>
-          <li class="mb-2">
-            <a href="#!">New products</a>
-          </li>
-          <li class="mb-2">
-            <a href="#!">FAQ</a>
-          </li>
-          <li class="mb-2">
-            <a href="#!">privacy and policy</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
-
-        <!-- Links -->
-        <h2>Contact</h2>
-        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
-
-        <ul class="fa-ul foot-desc ml-4">
-          <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>042 567 517 511</li>
-          <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>Grocerystore@support.com</li>
-          <li><span class="fa-li"><i class="far fa-clock"></i></span>Monday - Sunday: 10 A.M - 10 P.M</li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-  </div>
-
-
-  <hr class="mx-auto" />
-
-  <div class="container">
-    <hr class="layout-footline" style="opacity: 0;">
-    <ul class="list-unstyled list-inline text-center">
-        <li class="list-inline-item">
-            <a class="facebookBtn layout-social" href="https://www.facebook.com/sevabharathitg"
-                                                target="_blank" style="text-decoration: none;"></a>
-        </li>
-        <li class="list-inline-item">
-            <a class="twitterBtn layout-social" href="https://twitter.com/sevabharathitg"
-                                                target="_blank" style="text-decoration: none;"></a>
-        </li>
-        <li class="list-inline-item">
-            <a class="instagramBtn layout-social" href="https://www.instagram.com/sevabharathitg/"
-                                                target="_blank" style="text-decoration: none;"></a>
-        </li>
-        <li class="list-inline-item">
-            <a class="youtubeBtn layout-social" href="https://www.youtube.com/user/sevabharathi" 
-                                                target="_blank" style="text-decoration: none;"></a>
-        </li>
-    </ul>
-</div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2021 Copyright:
-    <a href="https://mdbootstrap.com/">Grocery Store</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- //footer -->
         <script src="../static/js/bootstrap.min.js"></script>
         <script>
             $(document).ready(function(){

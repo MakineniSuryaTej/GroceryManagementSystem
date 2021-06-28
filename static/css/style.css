@@ -785,23 +785,23 @@ ul.dropdown-menu.drp-mnu li a i {
 	padding:3em 0;
 	background:#FA1818;
 }
-.w3agile_newsletter_left{
+.grocery_newsletter_left{
 	float: left;
     width: 35%;
     text-align: right;
 }
-.w3agile_newsletter_left h3{
+.grocery_newsletter_left h3{
 	text-transform: capitalize;
     font-size: 1.2em;
     color: #fff;
     margin: .5em 0 0;
 }
-.w3agile_newsletter_right{
+.grocery_newsletter_right{
 	float: left;
     width: 50%;
     margin-left: 2em;
 }
-.w3agile_newsletter_right input[type="email"]{
+.grocery_newsletter_right input[type="email"]{
 	outline: none;
     padding: 10px;
     background: none;
@@ -811,7 +811,7 @@ ul.dropdown-menu.drp-mnu li a i {
     width: 74%;
     float: left;
 }
-.w3agile_newsletter_right input[type="submit"]{
+.grocery_newsletter_right input[type="submit"]{
 	outline: none;
     padding: 10px 0;
     background: #fff;
@@ -821,7 +821,7 @@ ul.dropdown-menu.drp-mnu li a i {
     width: 25.7%;
     text-transform: uppercase;
 }
-.w3agile_newsletter_right input[type="submit"]:hover{
+.grocery_newsletter_right input[type="submit"]:hover{
 	background:#84C639;
 	border: 1px solid #84C639;
 	color:#fff;
@@ -1946,36 +1946,36 @@ ul.wmuSliderPagination {
 /*-- //wmuslider --*/
 /*-- //team --*/
 /*-- events --*/
-.w3agile_event_grid_left i{
+.grocery_event_grid_left i{
 	font-size: 2em;
     color: #FA1818;
     padding-top: 1em;
 }
-.w3agile_event_grid_right{
+.grocery_event_grid_right{
 	border-left: 1px solid #D2D2D2;
     padding-left: 3em;
     border-bottom: 1px solid #D2D2D2;
     padding-bottom: 1.25em;
 }
-.w3agile_event_grid_right h4{
+.grocery_event_grid_right h4{
 	font-size: 1.1em;
     color: #212121;
     text-transform: uppercase;
 }	
-.w3agile_event_grid_right p{
+.grocery_event_grid_right p{
 	font-size:14px;
 	color:#999;
 	line-height:2em;
 	margin:1em 0 0;
 }
-.w3agile_event_grids:nth-child(2){
+.grocery_event_grids:nth-child(2){
 	margin:3em 0 0;
 }
-.w3agile_event_grid_left {
+.grocery_event_grid_left {
     border-bottom: 1px solid #D2D2D2;
     height: 110px;
 }
-.w3agile_event_grids:nth-child(3){
+.grocery_event_grids:nth-child(3){
 	margin:3em 0;
 }
 .events_bottom_left1_grid {
@@ -2169,19 +2169,19 @@ ul.wmuSliderPagination {
     margin: 0 !important;
     width: 25% !important;
 }
-.w3agile_description h4{
+.grocery_description h4{
 	font-size:1em;
 	color:#212121;
 	text-transform:uppercase;
 }
-.w3agile_description p{
+.grocery_description p{
 	font-size:14px;
 	color:#999;
 	line-height:2em;
 	margin:.5em 0 0;
 	width:80%;
 }
-.w3agile_description {
+.grocery_description {
     margin: 2em 0;
 }
 .grocerys_grocery_banner_nav_right_grid_popular{
@@ -2403,13 +2403,13 @@ ul.wmuSliderPagination {
 	.view h4 {
 		margin: 4.5em 0 0;
 	}
-	.w3agile_event_grid_right {
+	.grocery_event_grid_right {
 		padding-left: 2em;
 	}
-	.w3agile_event_grid_right h4 {
+	.grocery_event_grid_right h4 {
 		font-size: 1em;
 	}
-	.w3agile_event_grid_left {
+	.grocery_event_grid_left {
 		height: 108px;
 	}
 	.events_bottom_left2 h4 {
@@ -2451,7 +2451,7 @@ ul.wmuSliderPagination {
 	.grocery_banner_nav_right_banner9 {
 		background-position:-50px 0px;
 	}
-	.w3agile_event_grid_right {
+	.grocery_event_grid_right {
 		padding-right: 0;
 	}
 	.agileinfo_mail_grid_left ul li i {
@@ -2626,7 +2626,7 @@ ul.wmuSliderPagination {
 	.snipcart-details {
 		width: 80%;
 	}
-	.w3agile_newsletter_right {
+	.grocery_newsletter_right {
 		width: 60%;
 	}
 	.grocery_banner_nav_right_banner5 {
@@ -2647,14 +2647,14 @@ ul.wmuSliderPagination {
 	.typo, .privacy, .faq, .services, .events, .mail, .agileinfo_single, .w3_login {
 		padding: 4em 3em;
 	}
-	.w3agile_event_grid_right h4 {
+	.grocery_event_grid_right h4 {
 		font-size: 1.1em;
 		line-height: 1.5em;
 	}
-	.w3agile_event_grid_left {
+	.grocery_event_grid_left {
 		height: 171px;
 	}
-	.w3agile_event_grid_left i {
+	.grocery_event_grid_left i {
 		padding-top: 2em;
 	}
 	.events_bottom_left1_grid h4 {
@@ -2818,17 +2818,17 @@ ul.wmuSliderPagination {
 	.grocery_fresh_vegetables_grid1_bottom img, .grocery_fresh_vegetables_grid1 img {
 		margin: 0 auto;
 	}
-	.w3agile_newsletter_left {
+	.grocery_newsletter_left {
 		width: 32%;
 		text-align: left;
 	}
-	.w3agile_newsletter_right {
+	.grocery_newsletter_right {
 		width: 63%;
 	}
-	.w3agile_newsletter_right input[type="submit"] {
+	.grocery_newsletter_right input[type="submit"] {
 		width: 27.7%;
 	}
-	.w3agile_newsletter_right input[type="email"] {
+	.grocery_newsletter_right input[type="email"] {
 		width: 72%;
 	}
 	.w3_footer_grid {
@@ -2945,19 +2945,19 @@ ul.wmuSliderPagination {
 		float: left;
 		width: 50%;
 	}
-	.w3agile_event_grid_right {
+	.grocery_event_grid_right {
 		float: right;
 		width: 80%;
 	}
-	.w3agile_event_grid_left {
+	.grocery_event_grid_left {
 		height: 117px;
 		float: left;
 		width: 20%;
 	}
-	.w3agile_event_grid_left i {
+	.grocery_event_grid_left i {
 		padding-top: 1em;
 	}
-	.w3agile_event_grid:nth-child(2) {
+	.grocery_event_grid:nth-child(2) {
 		margin: 3em 0 0;
 	}
 	.events_bottom_left1 {
@@ -3079,13 +3079,13 @@ ul.wmuSliderPagination {
 	.wthree_banner_btm_pos h3 {
 		font-size: 1.1em;
 	}
-	.w3agile_newsletter_left {
+	.grocery_newsletter_left {
 		width: 100%;
 		text-align: center;
 		float: none;
 		margin-bottom: 2em;
 	}
-	.w3agile_newsletter_right {
+	.grocery_newsletter_right {
 		width: 70%;
 		float: none;
 		margin: 0 auto;
@@ -3284,7 +3284,7 @@ ul.wmuSliderPagination {
 	.more {
 		margin-left: 33.5em;
 	}
-	.w3agile_newsletter_right {
+	.grocery_newsletter_right {
 		width: 80%;
 	}
 	#PPMiniCart {
@@ -3350,7 +3350,7 @@ ul.wmuSliderPagination {
 	.grocery_fresh_vegetables_grid {
 		width: 70%;
 	}
-	.w3agile_newsletter_right {
+	.grocery_newsletter_right {
 		width: 90%;
 	}
 	.grocery_banner_nav_right_banner3, .grocery_banner_nav_right_banner4, .grocery_banner_nav_right_banner5, .grocery_banner_nav_right_banner6, .grocery_banner_nav_right_banner7, .grocery_banner_nav_right_banner8, .grocery_banner_nav_right_banner9, .grocery_banner_nav_right_banner10 {
@@ -3455,13 +3455,13 @@ ul.wmuSliderPagination {
 	.agileinfo_marquee h4 {
 		font-size: 1.1em;
 	}
-	.w3agile_newsletter_left h3 {
+	.grocery_newsletter_left h3 {
 		margin: 0;
 	}
 	.newsletter {
 		padding: 2em 0;
 	}
-	.w3agile_newsletter_right {
+	.grocery_newsletter_right {
 		width: 100%;
 	}
 	#PPMiniCart form {
@@ -3565,10 +3565,10 @@ ul.wmuSliderPagination {
 	.agileinfo_marquee h4 {
 		font-size: 1em;
 	}
-	.w3agile_newsletter_right input[type="submit"] {
+	.grocery_newsletter_right input[type="submit"] {
 		width: 31.7%;
 	}
-	.w3agile_newsletter_right input[type="email"] {
+	.grocery_newsletter_right input[type="email"] {
 		width: 68%;
 	}
 	.footer {
@@ -3711,10 +3711,10 @@ ul.wmuSliderPagination {
 	.panel-heading {
 		padding: 20px 15px;
 	}
-	.w3agile_event_grid_right h4 {
+	.grocery_event_grid_right h4 {
 		font-size: 1em;
 	}
-	.w3agile_event_grid_left {
+	.grocery_event_grid_left {
 		height: 115px;
 	}
 	.events-bottom {
@@ -3806,10 +3806,10 @@ ul.wmuSliderPagination {
 	.modal-dialog {
 		width: 390px;
 	}
-	.w3agile_newsletter_right input[type="submit"] {
+	.grocery_newsletter_right input[type="submit"] {
 		width: 37.7%;
 	}
-	.w3agile_newsletter_right input[type="email"] {
+	.grocery_newsletter_right input[type="email"] {
 		width: 62%;
 	}
 	.grocery_banner_nav_right_banner3, .grocery_banner_nav_right_banner4, .grocery_banner_nav_right_banner5, .grocery_banner_nav_right_banner6, .grocery_banner_nav_right_banner7, .grocery_banner_nav_right_banner8, .grocery_banner_nav_right_banner9, .grocery_banner_nav_right_banner10 {
@@ -3863,19 +3863,19 @@ ul.wmuSliderPagination {
 	.grocery_team_grid:nth-child(3) {
 		margin-bottom: 2em;
 	}
-	.w3agile_event_grid {
+	.grocery_event_grid {
 		padding: 0;
 	}
-	.w3agile_event_grid_right {
+	.grocery_event_grid_right {
 		padding-left: 1em;
 	}
-	.w3agile_event_grid_right h4 {
+	.grocery_event_grid_right h4 {
 		font-size: .9em;
 	}
-	.w3agile_event_grid_left {
+	.grocery_event_grid_left {
 		height: 140px;
 	}
-	.w3agile_event_grid_left i {
+	.grocery_event_grid_left i {
 		padding-top: 1.5em;
 	}
 	.events_bottom_left1 {
@@ -4091,18 +4091,18 @@ ul.wmuSliderPagination {
 	.top_brand_left, .grocerys_grocery_banner_left {
 		width: 100%;
 	}
-	.agile_top_brand_left_grid1 p,.agileinfo_mail_grid_right input[type="text"], .agileinfo_mail_grid_right input[type="email"], .agileinfo_mail_grid_right textarea,.w3agile_event_grid_right p,.grocery_team_grid p,p.animi,.w3_testimonials_grid p,.wthree_news_top_serv_btm_grid p,.privacy1-grid ul li span,.grocerys_service_grid_left p, .privacy2-grid1 p,.grocery_fresh_vegetables_grid ul li a,.wthree_footer_copy p,.grocery_banner_nav_right_banner_pet p {
+	.agile_top_brand_left_grid1 p,.agileinfo_mail_grid_right input[type="text"], .agileinfo_mail_grid_right input[type="email"], .agileinfo_mail_grid_right textarea,.grocery_event_grid_right p,.grocery_team_grid p,p.animi,.w3_testimonials_grid p,.wthree_news_top_serv_btm_grid p,.privacy1-grid ul li span,.grocerys_service_grid_left p, .privacy2-grid1 p,.grocery_fresh_vegetables_grid ul li a,.wthree_footer_copy p,.grocery_banner_nav_right_banner_pet p {
 		font-size: 13px;
 	}
 	.privacy1-grid ul li span {
 		margin: 1em 0 0;
 	}
-	.w3agile_event_grid_left {
+	.grocery_event_grid_left {
 		height: 156px;
 		padding-left: 0;
 		text-align: center;
 	}
-	.w3agile_event_grid_right h4 {
+	.grocery_event_grid_right h4 {
 		font-size: .94em;
 	}
 	.wthree_news_top_serv_btm_grid h3 {
@@ -4130,14 +4130,14 @@ ul.wmuSliderPagination {
 	.agileinfo_single_right_details {
 		width: 55% !important;
 	}
-	.w3agile_newsletter_left {
+	.grocery_newsletter_left {
 		margin-bottom: 1.5em;
 	}
-	.w3agile_description p {
+	.grocery_description p {
 		font-size: 13px;
 		width: 100%;
 	}
-	.w3agile_description {
+	.grocery_description {
 		margin: 2em 0 1em;
 	}
 	.privacy1-grid ul li {
@@ -4162,13 +4162,13 @@ ul.wmuSliderPagination {
 		height: 80px;
 		padding: 1.2em 0 0;
 	}
-	.w3agile_newsletter_right input[type="email"] {
+	.grocery_newsletter_right input[type="email"] {
 		width: 100%;
 		float: none;
 		margin-bottom: 1em;
 		font-size: 13px;
 	}
-	.w3agile_newsletter_right input[type="submit"] {
+	.grocery_newsletter_right input[type="submit"] {
 		width: 55%;
 		font-size: 13px;
 		padding: 9px 0;
@@ -4263,7 +4263,7 @@ ul.wmuSliderPagination {
 		font-size: .9em;
 		margin: 1em 0 0;
 	}
-	.w3agile_event_grid_left i {
+	.grocery_event_grid_left i {
 		padding-top: 2.5em;
 		font-size: 1.5em;
 	}

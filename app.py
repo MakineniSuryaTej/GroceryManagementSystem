@@ -22,6 +22,18 @@ def drinks():
 def events():
     return render_template('events.html')
 
+@app.route('/frozen')
+def frozen():
+    return render_template('frozen.html')
+
+@app.route('/household')
+def household():
+    return render_template('household.html')
+
+@app.route('/kitchen')
+def kitchen():
+    return render_template('kitchen.html')
+
 @app.route('/login')
 def login():
     return render_template('grocery-login.html')
@@ -44,3 +56,5 @@ def vegetables():
 
 if __name__=='__main__':
     app.run(debug=True)
+
+'''w3l->grocery,w3agile->grocery'''
