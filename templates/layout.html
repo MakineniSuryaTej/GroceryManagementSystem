@@ -58,6 +58,7 @@
 		    </div>
 		    <div class="grocery_header_right">
 			    <ul>
+                    {% if not session['loggedin'] %}
 				    <li class="dropdown profile_details_drop">
 					    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i></a>
 					    <div class="mega-dropdown-menu">
@@ -69,6 +70,19 @@
 						    </div>                  
 					    </div>	
 				    </li>
+                    {% else %}
+                    <li class="dropdown profile_details_drop">
+					    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i></a>
+					    <div class="mega-dropdown-menu">
+						    <div class="grocerys_vegetables">
+							    <ul class="dropdown-menu drp-mnu">
+								    <li><a href="{{url_for('login')}}">Profile</a></li> 
+								    <li><a href="{{url_for('logout')}}">Logout</a></li>
+							    </ul>
+						    </div>                  
+					    </div>	
+				    </li>
+                    {% endif %}
 			    </ul>
 		    </div>
 		    <div class="clearfix"> </div>

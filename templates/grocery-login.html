@@ -14,17 +14,20 @@
         <div class="container">
             <div class="forms-container">
                 <div class="signin-signup">
-                    <form action="#" class="sign-in-form">
+                    <form action="#" class="sign-in-form" method="POST">
                         <h2 class="title">Sign in</h2>
                         <div class="input-field">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Username" />
+                            <input type="text" placeholder="Username" name="signinusername" pattern="[A-Za-z0-9]+"/>
                         </div>
                         <div class="input-field">
                             <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Password" name="signinpassword"/>
                         </div>
                         <input type="submit" value="Login" class="btn solid" />
+                        {% if session['logincheck'] %}
+                            <h6>{{session['logincheck']}}</h6>
+                        {% endif %}
                         <p class="social-text">Or Sign in with social platforms</p>
                         <div class="social-media">
                             <a href="#" class="social-icon">
@@ -42,19 +45,19 @@
                         </div>
                         <p><a href="{{url_for('home')}}" style="text-decoration: none;color: darkgreen;">Back to Home</a></p>
                     </form>
-                    <form action="#" class="sign-up-form">
+                    <form action="#" class="sign-up-form" method="POST">
                         <h2 class="title">Sign up</h2>
                         <div class="input-field">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Username" />
+                            <input type="text" placeholder="Username" name="signupusername" pattern="[A-Za-z0-9]+"/>
                         </div>
                         <div class="input-field">
                             <i class="fas fa-envelope"></i>
-                            <input type="email" placeholder="Email" />
+                            <input type="email" placeholder="Email" name="signupemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"/>
                         </div>
                         <div class="input-field">
                             <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Password" name="signuppassword" />
                         </div>
                         <input type="submit" class="btn" value="Sign up" />
                         <p class="social-text">Or Sign up with social platforms</p>
@@ -106,7 +109,7 @@
                 </div>
             </div>
         </div>
-        <script src="../static/scripts/grocery-scripts.js"></script>
+    
         <script>
             const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
