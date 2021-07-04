@@ -1,26 +1,56 @@
+# Libraries
 import re
 from flask import Flask, render_template, url_for, redirect, request, session
 import mysql
 from flask_mysqldb import MySQL
 from datetime import timedelta
-
+# Initialization
 app = Flask(__name__)
 app.secret_key = "hello"
 app.permanent_session_lifetime = timedelta(minutes=1)
-#connecting to database
+# connecting to database
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_DB'] = 'grocery'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'root'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 mysql = MySQL(app)
+
+   
+
+def execute_query(query):
+    cur = mysql.connection.cursor()
+    cur.execute(query)
+    if query[0] == 'S':
+        data = list(cur.fetchall())
+    else:
+        mysql.connection.commit()
+        return
+    cur.close()
+    return data
+
+@app.route('/test')
+def test():
+    return render_template('test.html')
+@app.route('/upload',methods=['POST'])
+def upload():
+    image = request.files['image']
+    if image:
+       image = r"C:\Users\makin\Desktop\GroceryManagementSystem\static\images\{}".format(image.filename)
+       with open(image, 'rb') as file:
+           bindata = file.read()
+       execute_query('INSERT INTO test (Photo) VALUES("{}");'.format(tuple(bindata)))
+       return redirect(url_for('load'))
+    return "notdone"
+
+@app.route('/load')
+def load():
+    data = execute_query('SELECT Photo FROM test')
+    
+    return "done"
+
 @app.route('/')
 def home():
-    cur = mysql.connection.cursor()
-    sql_query = 'SELECT * FROM products'
-    cur.execute(sql_query)
-    students = cur.fetchall()
-    cur.close()
     return render_template('home.html')
 
 @app.route('/about')
@@ -57,11 +87,7 @@ def login():
         signinusername, signinpassword = request.form.get('signinusername',''), request.form.get('signinpassword','')
         signupusername, signupemail, signuppassword = request.form.get('signupusername',''), request.form.get('signupemail',''), request.form.get('signuppassword','')
         if signinpassword and signinusername:
-            cur = mysql.connection.cursor()
-            sql_query = 'SELECT Username,Password FROM login_details;'
-            cur.execute(sql_query)
-            data = list(cur.fetchall())
-            cur.close()
+            data = execute_query('SELECT Username,Password FROM login_details;')
             session['username'], session['password'], session['logincheck'] = signinusername, signinpassword, None
             session.permanent = True
             for person in data:
@@ -73,20 +99,12 @@ def login():
         elif signupusername and signupemail and signuppassword:
             session['username'], session['password'], session['email'], session['logincheck'] = signupusername, signuppassword, signupemail, None
             session.permanent = True
-            cur = mysql.connection.cursor()
-            sql_query = 'SELECT * FROM login_details WHERE Email = "{}"'.format(signupemail)
-            cur.execute(sql_query)
-            personexists = list(cur.fetchall())
-            cur.close()
+            personexists = execute_query('SELECT * FROM login_details WHERE Email = "{}"'.format(signupemail))
             if len(personexists)>0:
                 session['logincheck'] = "User already exists Please login"
                 return redirect(url_for('login'))
             else:
-                cur = mysql.connection.cursor()
-                sql_query = 'INSERT INTO login_details (Username, Email, Password) VALUES ("{}", "{}", "{}");'.format(signupusername, signupemail, signuppassword)
-                cur.execute(sql_query)
-                mysql.connection.commit()
-                cur.close()
+                execute_query('INSERT INTO login_details (Username, Email, Password) VALUES ("{}", "{}", "{}");'.format(signupusername, signupemail, signuppassword))
                 session['loggedin'] = True
             return redirect(url_for('home'))
         else:
@@ -117,4 +135,4 @@ def vegetables():
 if __name__=='__main__':
     app.run(debug=True)
 
-'''w3l->grocery,w3agile->grocery'''
+'w3l->grocery,w3agile->grocery'
