@@ -1,7 +1,6 @@
 # Libraries
 import re
 from flask import Flask, render_template, url_for, redirect, request, session
-import mysql
 from flask_mysqldb import MySQL
 from datetime import timedelta
 # Initialization
@@ -9,14 +8,13 @@ app = Flask(__name__)
 app.secret_key = "hello"
 app.permanent_session_lifetime = timedelta(minutes=1)
 # connecting to database
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_DB'] = 'grocery'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'root'
+app.config['MYSQL_HOST'] = 'brk5hkdoqxwzb4pymez6-mysql.services.clever-cloud.com'
+app.config['MYSQL_DB'] = 'brk5hkdoqxwzb4pymez6'
+app.config['MYSQL_USER'] = 'uzacqdcathxgavtv'
+app.config['MYSQL_PASSWORD'] = '18VXcPSB2cPTFz2G0CY2'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 mysql = MySQL(app)
 
-   
 
 def execute_query(query):
     cur = mysql.connection.cursor()
