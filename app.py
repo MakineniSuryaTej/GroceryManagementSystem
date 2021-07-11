@@ -50,7 +50,6 @@ def load():
 @app.route('/')
 def home():
     data = execute_query('SELECT * FROM product_details WHERE product_id = "{}" OR product_id = "{}" OR product_id = "{}" OR product_id = "{}"'.format("PRFR004","PRKI010","PRVE008","PRFZ012"))
-    print(data)
     return render_template('home.html',data = data, n = len(data))
 
 @app.route('/about')
