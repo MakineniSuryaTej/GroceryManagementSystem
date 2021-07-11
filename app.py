@@ -49,7 +49,9 @@ def load():
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    data = execute_query('SELECT * FROM product_details WHERE product_id = "{}" OR product_id = "{}" OR product_id = "{}" OR product_id = "{}"'.format("PRFR004","PRKI010","PRVE008","PRFZ012"))
+    print(data)
+    return render_template('home.html',data = data, n = len(data))
 
 @app.route('/about')
 def about():
@@ -120,7 +122,8 @@ def ouraid():
 
 @app.route('/products')
 def products():
-    return render_template('products.html')
+    fruits = execute_query('SELECT * FROM product_details WHERE product_id LIKE "PRFR___"')
+    return render_template('products.html', fruits  = fruits, n=4)
 
 @app.route('/single')
 def single():

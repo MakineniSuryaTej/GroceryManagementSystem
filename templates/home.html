@@ -88,6 +88,7 @@
 	<div class="container">
 		<h3>Hot Offers</h3>
 		<div class="agile_top_brands_grids">
+			{% for i in range(n) %}
 			<div class="col-md-3 top_brand_left">
 				<div class="hover14 column">
 					<div class="agile_top_brand_left_grid">
@@ -95,9 +96,9 @@
 							<figure>
 								<div class="snipcart-item block" >
 									<div class="snipcart-thumb">
-										<a href="{{url_for('single')}}"><img title=" " alt=" " src="../static/images/1.png" /></a>		
-										<p>fortune sunflower oil</p>
-										<h4>₹797.99 <span>₹865.00</span></h4>
+										<a href="{{url_for('single')}}"><img title=" " alt=" " src="{{'../static/images/' + data[i]['product_id']|string + '.png'}}" /></a>		
+										<p>{{data[i]['product_name']}}</p>
+										<h4>{{"₹" + data[i]['product_with_discount']|string }}<span>{{"₹" + data[i]['product_price']|string }}</span></h4>
 									</div>
 									<div class="snipcart-details top_brand_home_details">
 										<form action="#" method="post">
@@ -121,111 +122,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block" >
-										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img title=" " alt=" " src="../static/images/3.png" /></a>		
-											<p>basmati rise (5 Kg)</p>
-											<h4>₹939.99 <span>₹1049.00</span></h4>
-										</div>
-										<div class="snipcart-details top_brand_home_details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="basmati rise" />
-													<input type="hidden" name="amount" value="1049" />
-													<input type="hidden" name="discount_amount" value="100.01" />
-													<input type="hidden" name="currency_code" value="Rupees" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-			</div>
-			<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="../static/images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/2.png" alt=" " class="img-responsive" /></a>
-											<p>Pepsi soft drink (2 Ltr)</p>
-											<h4>₹78.00 <span>₹90.00</span></h4>
-										</div>
-										<div class="snipcart-details top_brand_home_details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="Pepsi soft drink" />
-													<input type="hidden" name="amount" value="90.00" />
-													<input type="hidden" name="discount_amount" value="12.00" />
-													<input type="hidden" name="currency_code" value="Rupees" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-			</div>
-			<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="../static/images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/9.png" alt=" " class="img-responsive" /></a>
-											<p>fresh spinach (palak)</p>
-											<h4>₹23.00 <span>₹28.75</span></h4>
-										</div>
-										<div class="snipcart-details top_brand_home_details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="fresh spinach" />
-													<input type="hidden" name="amount" value="28.75" />
-													<input type="hidden" name="discount_amount" value="5.75" />
-													<input type="hidden" name="currency_code" value="Rupees" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-			</div>
+			{% endfor %}
 			<div class="clearfix"> </div>
 		</div>
 	</div>

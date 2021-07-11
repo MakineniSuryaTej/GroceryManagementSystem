@@ -5,3 +5,88 @@ CREATE TABLE `login_details` (
   `Password` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`UserID`)
 ) ENGINE = InnoDB AUTO_INCREMENT = 4 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
+
+insert into product_details values
+('PRFR001','Banana Robusta',36.25,29,7.25,'1kg Fresho Robusta is fine quality, sweet flavoured, mushy and soft bananas.',10,1),
+('PRFR002','Mango',131.25,105,26.25,'1kg The juicy flesh of this mango is fibreless and is delicious in taste.',10,1),
+('PRFR003','Apples',248.75,199,49.75,'Red Delicious Apples are a natural source of fibre and are fat free. They contain a wide variety of anti-oxidants and polynutrients.',10,1),
+('PRFR004','Guava',36.25,29,7.25,'500gm Savour the green guavas along with hard, pale yellow edible seeds. The off-white flesh is crunchy and mildly sweet with very good fragrance.',10,1),
+('PRFR005','Muskmelon',42.5,34,8.5,'1pc(450g-900gm) Fresho striped muskmelons have a distinct external skin that is smooth, with green ribbing on pistachio-grey colored surface. Their flesh is orange coloured, sweet with a floral aroma.',10,1),
+('PRFR006','Watermelon',50,29.94,20.06,'1pc(1.7-2.5kg) With greenish black to smooth dark green surface, Fresho watermelons are globular in shape and are freshly picked for you directly from our farmers.',10,1),
+('PRFR007','Pomogranate',186.25,134,52.15,'4pc(800-880gm) With ruby color and an intense floral, sweet-tart flavor, the pomegranate delivers both taste and beauty.',10,2),
+('PRFR008','Jamun',56.25,45,11.25,'250gm Jamuns are oval, elongated and have a dark purple to black skin with a pink or white flesh.',10,1),
+('PRFR009','Papaya',52.5,29.7,22.57,'1pc(1kg-1.5kg) Semi ripe papayas have blend of sweet buttery consistency and sour taste. They are half green and half yellow.',10,1),
+('PRFR010','Pineaple',35,27.72,7.35,'1pc(750gm-800gm) With the shape of a pine cone, the fruit is loosely fibrous and juicy with white to yellowish flesh.',10,1),
+('PRFR011','Grapes',40,32,8,'500gm These soft skinned Fresho black blue grapes have a foxy flavour and a brisky pungent taste.We have neatly packed the best quality grapes to make your day fresh and healthy.',10,1),
+('PRFR012','Orange',145,116,29,'Navel oranges are very sugary and juicy and considered to be the worlds finest orange for fresh consumption because they are very sweet, naturally juice, seedless and peels and segments very easily.',10,1),
+('PRVE001','Fresh Cauliflower',43.75,35,8.75,'1 pc(approx. 400 to 600 G) Cauliflower is made up of tightly bound clusters of soft, crumbly, sweet cauliflower florets that form a dense head.',10,2),
+('PRVE002','Fresh Brinjal',37.5,30,7.5,'500gm Fresho Organic products are organically grown and handpicked by expert.',10,1),
+('PRVE003','Lemon',18.75,12.38,6.38,'250gm With a segmented flesh that has a unique pleasant aroma and a strong sour taste, lemons are round/oval and have a yellow, texturized external peel.',10,1),
+('PRVE004','Palak',25,20,5,'250gm With a sweet, nutty, and tangent flavour, Palaks are green leafy vegetables that are succulent and spoon-shaped.',10,1),
+('PRVE005','Broccoli',48,38.4,9.6,'1pc(250gm-500gm) With a shape resembling that of a cauliflower, Brocollis have clusters of small, tight flower heads. These heads turn bright green on cooking and tastes slightly bitter.',10,2),
+('PRVE006','Onion',37.5,30,7.5,'1kg It is organically grown and handpicked from farm.',10,1),
+('PRVE007','Ladies Finger',37.5,28.71,8.62,'500gm Ladies finger is a green vegetable with a tip at the end and a lighter green head, which is inedibe and to be thrown away.',10,1),
+('PRVE008','Carrot',62.5,50,12.5,'500gm A popular sweet-tasting root vegetable, Carrots are narrow and cone shaped.',10,1),
+('PRVE009','Potato',32.5,26,6.5,'1kg It is organically grown and handpicked from farm.',10,1),
+('PRVE010','Bitter Gourd',50,27.72,22.5,'500gm The most bitter among all fruits, bitter gourds come with a rough, bumpy and green skin.',10,1),
+('PRVE011','Beans',25,19.8,5.25,'250gm These narrow long beans, called Cluster beans or Guar, come with tiny pods and are highly nutritious.',10,1),
+('PRVE012','Tomatos',16.25,13,3.25,'Local tomatoes are partly sour and partly sweet and contain many seeds inside which are edible. The red colour present in tomatoes is due to lycopene, an anti-oxidant.',10,2),
+('PRKI001','Lizol',140,124.6,15.4,'450ml Lizol Power Kitchen Cleaner Trigger removes 99.9% germs, grease, baked-on food, food stains, dirt, and grime.',10,2),
+('PRKI002','Bambooz Kitchen ToolSet',299,199.33,98.67,'3pc This is a set of 3 wooden cooking tools that includes a spatula, a ladle and a turner.',10,2),
+('PRKI003','Kvg Potato Smasher',159,127.2,31.8,'1pc Potato Masher is a great tool to quickly mash boiled potatoes for various Indian delicacies such as pav bhaji, masala dosa, stuffed paratha or for potato mash as an accompaniment with grilled meat.',10,2),
+('PRKI004','Anjali Utility Set',225,119.25,105.75,'1pc This is a budget-friendly high quality 3 piece combo set which comes with a vegetable knife, a lighter, and a peeler.',10,2),
+('PRKI005','Pigeon Mini Chopper',545,299.75,245.25,'1pc This compact kitchen appliance is designed to help cut down your kitchen chores.',10,2),
+('PRKI006','Anjali Chopping Board',225,168.75,56.25,'1pc Make chopping vegetables and fruits easy and fun with this virgin plastic chopping board.',10,2),
+('PRKI007','Manya Stainless Steel Baby Vanna Chetty',199,104.72,14.28,'These steel copper bottom vessels can be used for serving food.',10,2),
+('PRKI008','Bamboooz Rolling Board',599,401.33,197.67,'Bamboooz Bamboo Wood Chakla/Rolling Board are made from high-quality single wood bamboo block.',10,2),
+('PRKI009','Anjali Royal Peeler',52,46.8,5.2,'Royal peeler is made of stainless steel blade, used to peel fruits and vegetables.',10,2),
+('PRKI010','Anjali Tomato Knife',75,60,15,'Anjali tomato slicer knife is made of stainless steel with a 210 mm thick blade and the serrated blade easily and neatly cuts thin skinned vegetables.',10,2),
+('PRKI011','Liao Kitchen Scrubber',250,120,130,'Scrub pad made up of superior quality fibre. Useful for both tough and everyday cleaning.',10,2),
+('PRKI012','Kvg Gas Lighter',79,75,4,'A gas lighter is a device which is used to ignite the gas stove. It is used in gas stoves which do not have automatic ignition systems. It uses a physical phenomenon called piezo-electric effect to generate an electric spark which ignites the combustible gas from the stove burner.',10,2),
+('PRDR001','Thums Up',40,27.6,12.4,'750ml Thums Ups strong taste packed with a punch of soda has often defining an adventurous aspect of the drinkers personality.',10,2),
+('PRDR002','Coca-Cola',40,28,12,'750ml Coca-Cola has a taste that refreshes, for a rewardingly uplifting experience.',10,2),
+('PRDR003','Sprite',40,33.6,6.4,'750ml Sprite will always keep you refreshed. It has true feelings for your thirst.',10,2),
+('PRDR004','Fanta',95,89.3,5.7,'2L Fanta lets you make the most of a moment with the tempting taste and its tingling bubbles.',10,2),
+('PRDR005','Pepsi',40,35.2,4.8,'750ml Pepsi is the pop that shakes things up. Pepsi is ubiquitous on just about every social occasion and is also known to be a party starter.',10,2),
+('PRDR006','Mountaindew',40,35.2,4.8,'750ml Mountain Dew exhilarates like no other because of its active, high-energy, extreme citrus taste.',10,2),
+('PRDR007','Kinley Soda',20,14.8,4.2,'250ml The consistency and purity of the carbonated water is maintained using various procedures. Also containing added minerals, Kinley sparkling water is the one to reckon with.',10,2),
+('PRDR008','Redbull',431,387.9,43.1,'Pack of 4 Red Bull has made a conscious decision to use 100% recyclable aluminium cans, and we developed our Red Bull Coolers which use up to 45% less energy than conventional fridges.',10,2),
+('PRDR009','Appy juice',33,28.05,4.95,'250ml Appy Fizz sparkling Apple juice contains carbonated and vitamin A. Its exclusive taste and quality make it a big option to hang out with friends.',10,2),
+('PRDR010','Monster',330,297,33,'3*350ml Monster packs a powerful punch but has a smooth easy drinking flavour.',10,2),
+('PRDR011','Glucon-D',70,63,7,'200gm Glucon D fills you with the energy required to stay act.',10,2),
+('PRDR012','Mirinda',90,59,31,'Mirindas great orangey taste and sparkling bubbles encourage you to be carefree, spontaneous and playful!With no artificial flavor, a sip of Mirinda, with its bold taste, will switch on the Pagalpanti in you.',10,2),
+('PRBR001','Fresho Bread - Brown',89,71.25,17.75,'Brown bread made from whole wheat flour and not enriched flour. It is high on fibre and its colour comes from a mixture of flours. Its great tasting and goes well with all types of sandwiches.',10,2),
+('PRBR002','Annia Whole Wheat Bread',45,42.55,2.45,'400gm Whether you live to eat or eat to live, it’s best when it’s done right. Britannia’s range of wholesome and delicious bread is filled with the goodness you need to keep your body healthy and happy.',10,2),
+('PRBR003','Britania bake rusk toast',30,22.28,7.72,'200gm Britannia rusk toast is as crispy as your traditional one, but with a hint of elaichi and right amount of sweetness, its taste will leave you amazed.',10,2),
+('PRBR004','Fresho Multigrain Bread',49,39.20,9.8,'400gm Freshly baked bread is one of lifes greatest pleasures. Our breads are made using the finest ingredients.',10,2),
+('PRBR005','Fresho Burger Buns',29,25,4,'150gm Pack of 2 Our Burger Buns are soft as clouds and perfect for homemade burgers.',10,2),
+('PRBR006','Fresho Sweet Bun',29,26.10,2.9,'200gm Pack of 4 It’s soft and spongy, crumbly and chewy all at once. These perfectly baked buns have great taste and texture to relish.',10,2),
+('PRBR007','Fresho White Big Bread',40,35,5,'400gm Fresho White Big Bread Slices - Safe, Preservative Free, 400 g.',10,2),
+('PRBR008','Fresho Signature Muffin/Cup Cake',159,135.15,14.85,'200gm Pack of 4 These classic muffins have a delicious twist: chocolate chips, instant coffee and a crunchy brown topping.',10,2),
+('PRBR009','Fresho Signature Croissants',119,101.15,17.85,'150gm Pack of 2 Croissants...named for its distinctive crescent shape, these freshly baked bread deliver a light, flaky, and buttery taste topped with cheddar cheese that could certainly classify them as a pastry.',10,2),
+('PRBR010','Britannia Gobbles Butter Blast Cake',45,42,3,'55gm Pack of 3 Britannia Butter Blast Cake has soft and delicious cake slices with the goodness of butter, milk and eggs.',10,2),
+('PRBR011','Amul Butter',98,90,8,'200gm Utterly Butterly Delicious taste of Amul Butter is must on breakfast table of almost every Indian Household.',10,2),
+('PRBR012','Goodlife Milk',26,23.06,2.94,'500ml Goodlife Smart Homogenised Double Toned Milk UHT processed milk with Min 1.5% fat and Min 9.0% SNF fortified with vitamins A and D.',10,2),
+('PRFZ001','Safal Frozen - Green Peas',135,130,5,' The unique IQF technology that ensures that each and every pea is frozen individually thus preserving the freshness and nutrition, which helps impart a taste closest to that of fresh peas, is what sets Safal apart from other brands.',10,2),
+('PRFZ002','Safal Frozen - Mixed Vegetables',110,100,10,'The vegetables are peeled and finely diced into small pieces, and they are frozen when fresh using the revolutionary individual quick freezing technique. This helps preserve the nutritional content and flavour of the vegetables.',10,2),
+('PRFZ003','McCain Smiles Crispy',305,259.25,45.75,'McCain Smiles are delicious mashed potatoes, seasoned and shaped into happy faces. Best enjoyed with Tomato Mayonnaise dip.',10,2),
+('PRFZ004','McCain Potato Bites',120,108,12,'McCain Chilli Garlic Potato Bites are the finest satisfying stuffs to delight you with the peppery blend of Chilli, Potatoes and Garlic. The wholesome and yummy bites will raise your tang buds.',10,2),
+('PRFZ005','Safal Frozen-Sweet Corn',90,81,9,'Safal Sweet Corn is selected only from the best farms across the country and is frozen while still fresh, using the ultra-advanced individual quick Freezing (IQF) technique.',10,2),
+('PRFZ006','McCain French - Fries',285,190.95,94.05,'McCain French - Fries 1.25 kg',10,2),
+('PRFZ007','McCain Veggie - Fingers',80,65,15,'McCain Veggie - Fingers 175 g',10,2),
+('PRFZ008','Yummiez Nuggets - Chicken',290,260,30,'Yummiez Chicken nuggets are lightly breaded and fully fry. Our tender, juicy, Chicken Nuggets are made with fresh meat.',10,2),
+('PRFZ009','Fresho Whole Wheat Parota',160,142,18,'Parota is a subcontinental layered flatbread made from maida or atta, alternatively known as flaky ribbon pancake. If you are looking for something fancy to eat but feeling too lazy to actually make it.',10,2),
+('PRFZ010','McCain Crispy Herb Coated Potatoes',130,115,15,'These lightly spiced potato wedges are complete from purposely chosen potatoes and evenly sprinkled with a delicious mixture of herbs and spices.',10,2),
+('PRFZ011','Amul Happy Treats',130,118,12,'Amul frozen snacks has much higher nutrition value compare to other frozen snacks available in the market which are mainly made from Maida and potatos.',10,2),
+('PRFZ012','ITC Master Chef Chicken Patty',200,170,30,' ITC Master Chef is a high-quality brand its quality is the gold standard.It adheres to absolute benchmark and its products are of the highest standards in taste and quality.',10,2);
+
+
+
+
+select * from product_details;
+select * from login_details;
+
+
+
+
+delete from product_details;
