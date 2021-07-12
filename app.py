@@ -1,5 +1,6 @@
 # Libraries
 import re
+import random
 from flask import Flask, render_template, url_for, redirect, request, session
 from flask_mysqldb import MySQL
 from datetime import timedelta
@@ -50,6 +51,7 @@ def load():
 @app.route('/')
 def home():
     data = execute_query('SELECT * FROM product_details WHERE product_id = "{}" OR product_id = "{}" OR product_id = "{}" OR product_id = "{}"'.format("PRFR004","PRKI010","PRVE008","PRFZ012"))
+    print(data[0])
     return render_template('home.html',data = data, n = len(data))
 
 @app.route('/about')
@@ -124,9 +126,17 @@ def products():
     fruits = execute_query('SELECT * FROM product_details WHERE product_id LIKE "PRFR___"')
     return render_template('products.html', fruits  = fruits, n=4)
 
-@app.route('/single')
-def single():
-    return render_template('single.html')
+@app.route('/single/<product_id>')
+def single(product_id):
+    ids = ['PRFR___','PRVE___','PRKI___','PRDR___','PRBR___','PRFZ___']
+    item = execute_query('SELECT * FROM product_details WHERE product_id = "{}"'.format(product_id))
+    related = execute_query('SELECT * FROM product_details WHERE product_id <> "{}" AND product_id LIKE "{}" LIMIT 4'.format(product_id,product_id[:4]+"___"))
+    choices = list(filter(lambda x : x != product_id[:4]+"___", ids))
+    choice1 = execute_query('SELECT * FROM product_details WHERE product_id LIKE "{}" LIMIT 4'.format(random.choice(choices))) 
+    choice2 = execute_query('SELECT * FROM product_details WHERE product_id LIKE "{}" LIMIT 4'.format(random.choice(choices)))
+    while choice1 == choice2:
+        choice2 = execute_query('SELECT * FROM product_details WHERE product_id LIKE "{}" LIMIT 4'.format(random.choice(choices)))
+    return render_template('single.html', item = item[0], related = related, choice1 = choice1, choice2 = choice2)
 
 @app.route('/vegetables')
 def vegetables():

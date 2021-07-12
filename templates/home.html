@@ -88,7 +88,7 @@
 	<div class="container">
 		<h3>Hot Offers</h3>
 		<div class="agile_top_brands_grids">
-			{% for i in range(n) %}
+			{% for product in data %}
 			<div class="col-md-3 top_brand_left">
 				<div class="hover14 column">
 					<div class="agile_top_brand_left_grid">
@@ -96,9 +96,9 @@
 							<figure>
 								<div class="snipcart-item block" >
 									<div class="snipcart-thumb">
-										<a href="{{url_for('single')}}"><img title=" " alt=" " src="{{'../static/images/' + data[i]['product_id']|string + '.png'}}" /></a>		
-										<p>{{data[i]['product_name']}}</p>
-										<h4>{{"₹" + data[i]['product_with_discount']|string }}<span>{{"₹" + data[i]['product_price']|string }}</span></h4>
+										<a href={{url_for('single',product_id = product['product_id'])}}><img title=" " alt=" " src="{{'../static/images/' + product['product_id']|string + '.png'}}" /></a>		
+										<p>{{product['product_name']}}</p>
+										<h4>{{"₹" + product['product_with_discount']|string }}<span>{{"₹" + product['product_price']|string }}</span></h4>
 									</div>
 									<div class="snipcart-details top_brand_home_details">
 										<form action="#" method="post">
