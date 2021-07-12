@@ -42,8 +42,8 @@
 			    <a href="{{url_for('products')}}">Today's special Offers !</a>
 		    </div>
 		    <div class="grocery_search">
-			    <form action="#" method="post">
-				    <input type="text" name="Product" value="Search for groceries..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a groceries...';}" required="">
+			    <form action="/search" method="POST">
+				    <input type="text" name="search" value="{{ request.form.search}}" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a groceries...';}" required="">
 				    <input type="submit" value=" ">
 			    </form>
 		    </div>

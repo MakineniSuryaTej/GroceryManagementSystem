@@ -54,6 +54,19 @@ def home():
     print(data[0])
     return render_template('home.html',data = data, n = len(data))
 
+@app.route('/search', methods=["POST","GET"])
+def search():
+    if request.method=='POST':
+        search_product=request.form.get('search','')
+        search_product=search_product.lower()
+        data=execute_query("SELECT  LOWER(product_name),product_id from product_details")
+        print(data)
+        if search_product in data:
+            return redirect(url_for('single',data[1]))
+        else:
+            print("search not found")
+            return redirect(url_for('home'))
+
 @app.route('/about')
 def about():
     return render_template('about.html')
