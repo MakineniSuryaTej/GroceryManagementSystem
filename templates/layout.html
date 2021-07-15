@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"crossorigin="anonymous">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,11 +40,11 @@
     <body>
 	    <div class="grocery_header">
 		    <div class="grocery_offers">
-			    <a href="{{url_for('products')}}">Today's special Offers !</a>
+			    <a href="{{url_for('products')}}"><marquee behavior="scroll" direction="left">Today's special Offers !</marquee></a>
 		    </div>
 		    <div class="grocery_search">
-			    <form action="/search" method="POST">
-				    <input type="text" name="search" value="{{ request.form.search}}" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a groceries...';}" required="">
+			    <form action="{{url_for('search',searchname='default')}}" method="POST">
+				    <input type="text" name="searched_name" value="Search for groceries..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a groceries...';}" required="">
 				    <input type="submit" value=" ">
 			    </form>
 		    </div>

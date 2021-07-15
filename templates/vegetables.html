@@ -66,6 +66,7 @@
 			</div>
 			<div class="grocerys_grocery_banner_nav_right_grid grocerys_grocery_banner_nav_right_grid_veg">
 				<h3 class="grocery_fruit">Fruits & Vegetables</h3>
+				{% for product in vegetables1 %}
 				<div class="grocerys_grocery_banner_nav_right_grid1 grocerys_grocery_banner_nav_right_grid1_veg">
 					<div class="col-md-3 grocerys_grocery_banner_left grocerys_grocery_banner_left_asdfdfd">
 						<div class="hover14 column">
@@ -75,9 +76,9 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/29.png" alt=" " class="img-responsive" /></a>
-											<p>Fresh Bananas (1 kg)</p>
-											<h4>₹10.00 <span>₹12.00</span></h4>
+											<a href={{url_for('single',product_id = product['product_id'])}}><img src="{{'../static/images/' + product['product_id']|string + '.png'}}" alt=" " class="img-responsive" /></a>
+											<p>{{product['product_name']}}</p>
+											<h4>{{"₹" + product['product_with_discount']|string }}<span>{{"₹" + product['product_price']|string }}</span></h4>
 										</div>
 										<div class="snipcart-details">
 											<form action="#" method="post">
@@ -101,116 +102,9 @@
 						</div>
 						</div>
 					</div>
-					<div class="col-md-3 grocerys_grocery_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid grocery_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="../static/images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/30.png" alt=" " class="img-responsive" /></a>
-											<p>fresh cauliflower (2 no's)</p>
-											<h4>₹5.00 <span>₹8.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="fresh cauliflower" />
-													<input type="hidden" name="amount" value="5.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="Rupees" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 grocerys_grocery_banner_left grocerys_grocery_banner_left_asd">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid grocery_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="../static/images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/31.png" alt=" " class="img-responsive" /></a>
-											<p>fresh brinjal bharta (1 kg)</p>
-											<h4>₹2.00 <span>₹3.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="fresh brinjal bharta" />
-													<input type="hidden" name="amount" value="2.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="Rupees" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 grocerys_grocery_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid grocery_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="../static/images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/32.png" alt=" " class="img-responsive" /></a>
-											<p>fresh sweet lime (500 gm)</p>
-											<h4>₹6.00 <span>₹7.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="fresh sweet lime" />
-													<input type="hidden" name="amount" value="6.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="Rupees" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
 					<div class="clearfix"> </div>
 				</div>
+				{% endfor %}
 				<div class="grocerys_grocery_banner_nav_right_grid1 grocerys_grocery_banner_nav_right_grid1_veg">
 					<div class="col-md-3 grocerys_grocery_banner_left grocerys_grocery_banner_left_asdfdfd">
 						<div class="hover14 column">
@@ -222,7 +116,7 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/9.png" alt=" " class="img-responsive" /></a>
+											<a href={{url_for('single',product_id = "PRFR001")}}><img src="../static/images/9.png" alt=" " class="img-responsive" /></a>
 											<p>fresh spinach (palak)</p>
 											<h4>₹2.00 <span>₹3.00</span></h4>
 										</div>
@@ -258,7 +152,7 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/10.png" alt=" " class="img-responsive" /></a>
+											<a href={{url_for('single',product_id = "PRFR001")}}><img src="../static/images/10.png" alt=" " class="img-responsive" /></a>
 											<p>fresh mango dasheri (1 kg)</p>
 											<h4>₹5.00 <span>₹8.00</span></h4>
 										</div>
@@ -292,7 +186,7 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/11.png" alt=" " class="img-responsive" /></a>
+											<a href={{url_for('single',product_id = "PRFR001")}}><img src="../static/images/11.png" alt=" " class="img-responsive" /></a>
 											<p>fresh apple red (1 kg)</p>
 											<h4>₹6.00 <span>₹8.00</span></h4>
 										</div>
@@ -328,7 +222,7 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/12.png" alt=" " class="img-responsive" /></a>
+											<a href={{url_for('single',product_id = "PRFR001")}}><img src="../static/images/12.png" alt=" " class="img-responsive" /></a>
 											<p>fresh broccoli (500 gm)</p>
 											<h4>₹4.00 <span>₹6.00</span></h4>
 										</div>
@@ -367,7 +261,7 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/33.png" alt=" " class="img-responsive" /></a>
+											<a href={{url_for('single',product_id = "PRFR001")}}><img src="../static/images/33.png" alt=" " class="img-responsive" /></a>
 											<p>fresh basket onion (1 kg)</p>
 											<h4>₹5.00 <span>₹7.00</span></h4>
 										</div>
@@ -403,7 +297,7 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/34.png" alt=" " class="img-responsive" /></a>
+											<a href={{url_for('single',product_id = "PRFR001")}}><img src="../static/images/34.png" alt=" " class="img-responsive" /></a>
 											<p>fresh muskmelon (1 kg)</p>
 											<h4>₹4.00 <span>₹5.00</span></h4>
 										</div>
@@ -437,7 +331,7 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/35.png" alt=" " class="img-responsive" /></a>
+											<a href={{url_for('single',product_id = "PRFR001")}}><img src="../static/images/35.png" alt=" " class="img-responsive" /></a>
 											<p>fresh mushroom (500 ml)</p>
 											<h4>₹11.00 <span>₹15.00</span></h4>
 										</div>
@@ -473,7 +367,7 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="{{url_for('single')}}"><img src="../static/images/36.png" alt=" " class="img-responsive" /></a>
+											<a href={{url_for('single',product_id = "PRFR001")}}><img src="../static/images/36.png" alt=" " class="img-responsive" /></a>
 											<p>fresh strawberry (1 pc)</p>
 											<h4>₹7.00 <span>₹9.00</span></h4>
 										</div>
